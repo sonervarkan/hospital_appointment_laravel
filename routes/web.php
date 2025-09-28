@@ -13,13 +13,9 @@ Route::resource("patients", PatientsController::class);
 Route::resource("times", TimesController::class);
 Route::resource("appointments", AppointmentsController::class);
 
-//AJAX (yolu appointments/get-doctors olsun ve fonksiyonda AppointmentsController içindeki classda
-// bulunan getDoctors metodu olsun diyoruz)
+
 Route::get('/appointments/get-doctors/{department_id}', [AppointmentsController::class, 'getDoctors']);
 Route::get('/appointments/get-times/{doctor_id}/{appointment_date}', [AppointmentsController::class, 'getTimes'])->name('appointments.getTimes');
-
-
-//Route::get('/appointments/get-available-times/{doctor_id}/{date}', [AppointmentsController::class, 'getAvailableTimes']);
 
 
 Route::get('/', function () {
