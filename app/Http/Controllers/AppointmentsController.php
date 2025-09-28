@@ -68,7 +68,7 @@ class AppointmentsController extends Controller
         $data = request()->all();
         $appointment = Appointments::findOrFail($id);
 
-        // Önce patient'i güncelle
+     
         $patient = $appointment->patient;
         $patient->update([
             'patient_name' => $data['patient_name'],
@@ -76,7 +76,7 @@ class AppointmentsController extends Controller
             'patient_tc_no' => $data['patient_tc_no'],
         ]);
 
-        // Appointment'i güncelle
+ 
         $appointment->update([
             'department_id'    => $data['department_id'],
             'doctor_id'        => $data['doctor_id'],
