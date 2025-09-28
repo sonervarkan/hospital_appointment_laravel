@@ -34,10 +34,6 @@
                             <span style="color: red;">[Bölüm Atanmamış]</span>
                         @endif
                     </td>
-                <!--
-                if olmadan $doctor->department->department_name şeklinde de kullanılabilir
-                ancak eğer db de department_id null ise department_name bulamayacağı için hata verir
-                -->
                     <td>
                         <a href="{{ route('doctors.edit', $doctor->id) }}" class="btn">Edit</a>
                         <form action="{{ route('doctors.destroy', $doctor->id) }}" method="POST" style="display:inline;">
