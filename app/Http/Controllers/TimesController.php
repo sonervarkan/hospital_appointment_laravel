@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Times;
 use Illuminate\Http\Request;
 
-// extends: TimesController sınıfının Controller sınıfından türediğini gösteriyor.
+
 class TimesController extends Controller{
 
     public function index(){
