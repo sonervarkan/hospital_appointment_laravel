@@ -203,7 +203,7 @@ Appointments
 
 ## License
 
-This project  has no license.
+This project currently has no license.
 
 ## Contributing
 
