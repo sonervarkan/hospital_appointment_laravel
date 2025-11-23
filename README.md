@@ -204,7 +204,6 @@ Appointments
 ## License
 
 This project currently has no license.
-You may add one (MIT, Apache, etc.) if you plan to publish it.
 
 ## Contributing
 
